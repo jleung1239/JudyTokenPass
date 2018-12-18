@@ -6,7 +6,7 @@ public class TokenPass {
 
     public TokenPass(int playerCount){
         this.board = new int[playerCount];
-        this.currentPlayer = (int) (Math.random() * (playerCount - 1));
+        this.currentPlayer = (int) (Math.random() * (playerCount));
         for (int i = 0; i < board.length ; i++){
             board[i] = (int)( Math.random() * 10);
         }
